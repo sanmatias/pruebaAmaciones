@@ -1,0 +1,208 @@
+.logo{
+    width: 300px;
+}
+.titulo{
+    display: flexbox;
+    height: 200px;
+}
+.fuenteGrande{
+   font-family:"Rampart One", sans-serif;
+   text-align: center;
+   color: black;
+
+}
+nav{
+    background-color:  #FFB6C1;
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+    
+    padding: 30px;
+    text-align: center;
+    display: grid;
+    font-size: 20px;
+    gap: 10px;
+    
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+    font-size: large;
+    background-color:  #40E0D0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+body{
+    margin: 0px;
+    display: grid;
+    
+    
+}
+
+.imagen1{
+    height: 300px;
+transition: 0.5s;
+    background-image: url('../img/pastor_aus_1.jpg');
+   
+    width: 350px;
+    
+    background-size: cover;
+    display: flex;
+}
+
+.imagen1:hover{
+    background-image: url('../img/pastor_aus_2.jpg');
+    height: 300px;
+
+}
+
+.imagen2{
+    height: 300px;
+transition: 0.5s;
+    background-image: url('../img/golden1.jpg');
+    width: 350px;
+    background-position: bottom;
+ 
+    background-size: cover;
+    display: flex;
+}
+
+.imagen2:hover{
+    background-image: url('../img/golden2.jpg');
+    height: 300px;
+    background-position: top;
+}
+
+.imagen3{
+    height: 300px;
+transition: 0.5s;
+    background-image: url('../img/gato1.jpg');
+    width: 350px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.imagen3:hover{
+    background-image: url('../img/gato2.jpg');
+    height: 300px;
+    background-position: top;
+}
+
+.imagen4{
+    height: 300px;
+transition: 0.5s;
+    background-image: url('../img/hamster1.jpg');
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.imagen4:hover{
+    background-image: url('../img/hamster2.jpg');
+    height: 300px;
+    background-position: center;
+}
+
+
+@media (max-width:576px){
+    nav{
+        display: flex;
+            justify-content: space-around;
+            text-align: center;
+            height: 165px;
+    }
+    .titulo{
+        display: inline-block;
+    }
+    .opciones{
+        display: none;
+    
+    }
+    main{
+        display: flexbox;
+        align-items: center;
+    }
+body{
+    grid-template-areas: "nav" "main" "footer";
+}
+.botonSand{
+    padding-top: 70px;
+}
+
+
+}
+@media (min-width:576px){
+    main{
+        grid-template-columns:1fr 1fr;
+display: grid;
+    }
+    body{
+        grid-template-areas: "nav main main" "nav main main " "nav footer footer";
+    grid-template-columns: 310px 1fr 1fr;
+  
+    }
+    .opciones{
+        display: flexbox;
+    text-align: center;
+}
+.letraGrande{
+    font-size: 25px;
+}
+.botonSand{
+    display: none;
+}
+
+
+
+}
+
+.boton{
+    color: white;
+    background-color: blue;
+    padding: 7px;
+    border-radius: 4px;
+}
+.padAbajo{
+    padding-bottom: 30px;
+    display: flexbox;
+    width: 380px;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (min-width:1300px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width:690px){
+    main{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media (min-width:1000px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+.border{
+    border: 1px solid gray;
+}
+.border:hover{
+    border:2px solid black;
+    background-color: #ec8292;
+}
+
+.icono:hover{
+  font-size: 40px;
+}
